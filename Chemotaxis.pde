@@ -2,7 +2,8 @@
 
  void setup()   
  {     
- 	background(0);
+ 	frameRate(60);
+ 	background(255);
  	size(800,800);
  	colonyOne = new Bacteria[500];
  	for(int i = 0; i < colonyOne.length; i++)
@@ -14,7 +15,7 @@
  void draw()   
  {    
 
- 	fill(0);
+ 	fill(255);
  	rect(0,0,1000,1000);
  	for(int i = 0; i < colonyOne.length; i++)
  	{
@@ -41,7 +42,7 @@
  	  void show()
  	  {
  	  	noStroke();
- 	  	fill(random(0,255), random(0,255), random(0,255));
+ 	  	fill(0, 0, 0);
  	  	ellipse(myX, myY, theSize, theSize);
  	  }
- }    
+ }  
